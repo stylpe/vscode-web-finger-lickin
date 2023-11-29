@@ -5,20 +5,23 @@ settings:
   excludeLinksFromLockfile: false
 
 devDependencies:
+  '@types/assert':
+    specifier: ^1.5.10
+    version: 1.5.10
   '@types/mocha':
-    specifier: ^10.0.3
+    specifier: ^10.0.6
     version: 10.0.6
   '@types/vscode':
-    specifier: ^1.84.0
+    specifier: ^1.84.2
     version: 1.84.2
   '@types/webpack-env':
-    specifier: ^1.18.3
+    specifier: ^1.18.4
     version: 1.18.4
   '@typescript-eslint/eslint-plugin':
-    specifier: ^6.9.0
+    specifier: ^6.13.1
     version: 6.13.1(@typescript-eslint/parser@6.13.1)(eslint@8.54.0)(typescript@5.3.2)
   '@typescript-eslint/parser':
-    specifier: ^6.9.0
+    specifier: ^6.13.1
     version: 6.13.1(eslint@8.54.0)(typescript@5.3.2)
   '@vscode/test-web':
     specifier: ^0.0.48
@@ -27,7 +30,7 @@ devDependencies:
     specifier: ^2.1.0
     version: 2.1.0
   eslint:
-    specifier: ^8.52.0
+    specifier: ^8.54.0
     version: 8.54.0
   mocha:
     specifier: ^10.2.0
@@ -36,10 +39,10 @@ devDependencies:
     specifier: ^0.11.10
     version: 0.11.10
   ts-loader:
-    specifier: ^9.5.0
+    specifier: ^9.5.1
     version: 9.5.1(typescript@5.3.2)(webpack@5.89.0)
   typescript:
-    specifier: ^5.2.2
+    specifier: ^5.3.2
     version: 5.3.2
   webpack:
     specifier: ^5.89.0
@@ -195,12 +198,16 @@ packages:
       fastq: 1.15.0
     dev: true
 
-  /@playwright/browser-chromium@1.40.0:
-    resolution: {integrity: sha512-+MxALUvUcUx8NEKSv2fXfkXrnBe9qcKPAqXjQsLu52gYhIxbF/C63fedLbZsWJU5hnmxIVWVDHMszq2cVl55mw==}
+  /@playwright/browser-chromium@1.40.1:
+    resolution: {integrity: sha512-uNmjHYXBTYTfJkf89D6zVUcesCFzZ/yjkPj8FvBJQ6yf3na/j1rcjVNzx0PzOAGcWKioB/rnWRBi7b5ojOdCHA==}
     engines: {node: '>=16'}
     requiresBuild: true
     dependencies:
-      playwright-core: 1.40.0
+      playwright-core: 1.40.1
+    dev: true
+
+  /@types/assert@1.5.10:
+    resolution: {integrity: sha512-qEO+AUgYab7GVbeDDgUNCU3o0aZUoIMpNAe+w5LDbRxfxQX7vQAdDgwj1AroX+i8KaV56FWg0srXlSZROnsrIQ==}
     dev: true
 
   /@types/eslint-scope@3.7.7:
@@ -389,7 +396,7 @@ packages:
     dependencies:
       '@koa/cors': 4.0.0
       '@koa/router': 12.0.1
-      '@playwright/browser-chromium': 1.40.0
+      '@playwright/browser-chromium': 1.40.1
       gunzip-maybe: 1.4.2
       http-proxy-agent: 7.0.0
       https-proxy-agent: 7.0.2
@@ -398,7 +405,7 @@ packages:
       koa-mount: 4.0.0
       koa-static: 5.0.0
       minimist: 1.2.8
-      playwright: 1.40.0
+      playwright: 1.40.1
       tar-fs: 3.0.4
       vscode-uri: 3.0.8
     transitivePeerDependencies:
@@ -717,7 +724,7 @@ packages:
     hasBin: true
     dependencies:
       caniuse-lite: 1.0.30001565
-      electron-to-chromium: 1.4.595
+      electron-to-chromium: 1.4.596
       node-releases: 2.0.13
       update-browserslist-db: 1.0.13(browserslist@4.22.1)
     dev: true
@@ -984,8 +991,8 @@ packages:
     resolution: {integrity: sha512-WMwm9LhRUo+WUaRN+vRuETqG89IgZphVSNkdFgeb6sS/E4OrDIN7t48CAewSHXc6C8lefD8KKfr5vY61brQlow==}
     dev: true
 
-  /electron-to-chromium@1.4.595:
-    resolution: {integrity: sha512-+ozvXuamBhDOKvMNUQvecxfbyICmIAwS4GpLmR0bsiSBlGnLaOcs2Cj7J8XSbW+YEaN3Xl3ffgpm+srTUWFwFQ==}
+  /electron-to-chromium@1.4.596:
+    resolution: {integrity: sha512-zW3zbZ40Icb2BCWjm47nxwcFGYlIgdXkAx85XDO7cyky9J4QQfq8t0W19/TLZqq3JPQXtlv8BPIGmfa9Jb4scg==}
     dev: true
 
   /emoji-regex@8.0.0:
@@ -2111,18 +2118,18 @@ packages:
       find-up: 4.1.0
     dev: true
 
-  /playwright-core@1.40.0:
-    resolution: {integrity: sha512-fvKewVJpGeca8t0ipM56jkVSU6Eo0RmFvQ/MaCQNDYm+sdvKkMBBWTE1FdeMqIdumRaXXjZChWHvIzCGM/tA/Q==}
+  /playwright-core@1.40.1:
+    resolution: {integrity: sha512-+hkOycxPiV534c4HhpfX6yrlawqVUzITRKwHAmYfmsVreltEl6fAZJ3DPfLMOODw0H3s1Itd6MDCWmP1fl/QvQ==}
     engines: {node: '>=16'}
     hasBin: true
     dev: true
 
-  /playwright@1.40.0:
-    resolution: {integrity: sha512-gyHAgQjiDf1m34Xpwzaqb76KgfzYrhK7iih+2IzcOCoZWr/8ZqmdBw+t0RU85ZmfJMgtgAiNtBQ/KS2325INXw==}
+  /playwright@1.40.1:
+    resolution: {integrity: sha512-2eHI7IioIpQ0bS1Ovg/HszsN/XKNwEG1kbzSDDmADpclKc7CyqkHw7Mg2JCz/bbCxg25QUPcjksoMW7JcIFQmw==}
     engines: {node: '>=16'}
     hasBin: true
     dependencies:
-      playwright-core: 1.40.0
+      playwright-core: 1.40.1
     optionalDependencies:
       fsevents: 2.3.2
     dev: true
